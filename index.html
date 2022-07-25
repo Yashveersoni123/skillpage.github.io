@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>skill</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="skill_style.css" />
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <h1 id="myportfolio">MyPortfolio</h1>
+      <div class="nav_bar1" id="myTopnav">
+        <a href="Home_page.html" class="menu"> Home</a>
+        <a href="Skills.html" class="menu-btn"> Skills</a>
+        <a href="myproject.html" class="menu-btn"> Projects</a>
+        <a href="About.html" class="menu-btn"> About</a>
+      </div>
+      <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+    </nav>
+    <div class="container">
+      <section class="one">
+        <img src="Group 12 (2).png" alt="" srcset="" id="img" />
+      </section>
+      <section class="two">
+        <h1>Hello Viewer</h1>
+      </section>
+    </div>
+    <div class="container2">
+      <section class="sub1">
+        <h1>Study</h1>
+        <div class="sub-container2">
+          <h2>10th</h2>
+          <h4>Govt.Sr.Sec.School, Bhakri, Nagaur</h4>
+          <h2>12th</h2>
+          <h4>Govt.Sr.Sec.School, Shyopur, PratapNagar, Jaipur</h4>
+          <h2>BCA Part-1, 2&3(Pur.)</h2>
+          <h4>Compucom (CIITM) Collage, Jaipur</h4>
+        </div>
+      </section>
+      <section class="sub2">
+        <h1>Skills</h1>
+        <div class="sub-container3">
+          <div class="per">
+            <span class="left">C Language</span>
+            <span class="right">80%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="c"></div>
+          </div>
+          <div class="per">
+            <span class="left">c++</span>
+            <span class="right">68%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="cplus"></div>
+          </div>
+          <div class="per">
+            <span class="left">Python</span>
+            <span class="right">50%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="python"></div>
+          </div>
+          <div class="per">
+            <span class="left">HTML</span>
+            <span class="right">75%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="html"></div>
+          </div>
+          <div class="per">
+            <span class="left">CSS</span>
+            <span class="right">57%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="css"></div>
+          </div>
+          <div class="per">
+            <span class="left">JavaScript</span>
+            <span class="right">45%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="javascript"></div>
+          </div>
+          <div class="per">
+            <span class="left">UI designing</span>
+            <span class="right">50%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="ui"></div>
+          </div>
+          <div class="per">
+            <span class="left">SQL</span>
+            <span class="right">60%</span>
+          </div>
+          <div class="line">
+            <div class="line1" id="sql"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav_bar1") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav_bar1";
+      }
+    }
+  </script>
+</html>
