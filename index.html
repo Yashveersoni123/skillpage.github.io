@@ -23,10 +23,11 @@
     <nav class="nav_bar">
       <h1 id="myportfolio">MyPortfolio</h1>
       <div class="nav_bar1" id="myTopnav">
-        <a href="https://yashveersoni123.github.io/homepage.github.io/" class="menu"> Home</a>
-        <a href="https://yashveersoni123.github.io/skillpage.github.io/" class="menu-btn"> Skills</a>
-        <a href="https://yashveersoni123.github.io/projectpage.github.io/" class="menu-btn"> Projects</a>
-        <a href="https://yashveersoni123.github.io/aboutpage.github.io/" class="menu-btn"> About</a>
+         <i class="fa-solid fa-moon" onclick="dark()"></i>
+        <a href="Home_page.html" class="menu"> Home</a>
+        <a href="Skills.html" class="menu-btn"> Skills</a>
+        <a href="myproject.html" class="menu-btn"> Projects</a>
+        <a href="About.html" class="menu-btn"> About</a>
       </div>
       <i class="fa-solid fa-bars" onclick="myFunction()"></i>
     </nav>
@@ -114,6 +115,10 @@
     </div>
   </body>
   <script>
+     function dark()
+    {
+      document.body.classList.toggle("dark-theme");
+    }
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "nav_bar1") {
