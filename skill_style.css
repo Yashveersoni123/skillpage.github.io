@@ -6,6 +6,28 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
+  background-color: var(--primary1-color);
+}
+/* dark mode */
+.fa-moon {
+  color: var(--secondary-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+:root {
+  --primary-color: #0d0d0d;
+  --primary1-color: #0d0d0d;
+  --primary2-color: #050404ba;
+  --primary3-color: #3b3b3b;
+  --secondary-color: white;
+}
+.dark-theme {
+  --primary-color: #c7c7c7;
+  --primary1-color: #e3e3e3;
+  --primary2-color: #ffffffc7;
+  --primary3-color: #dbdada;
+
+  --secondary-color: black;
 }
 .nav_bar {
   display: flex;
@@ -15,15 +37,19 @@ body {
   height: 4rem;
   width: 100%;
   text-decoration: none;
-  background-color: aliceblue;
+  background-color: var(--primary-color);
 }
 .nav_bar a {
   margin: 2rem;
-  color: black;
-   font-size: 25px;
+  color: var(--secondary-color);
+  font-size: 25px;
   text-decoration: none;
 }
+.nav_bar a:hover {
+  color: rgb(114, 182, 221);
+}
 #myportfolio {
+  color: var(--secondary-color);
   cursor: pointer;
   list-style: none;
   font-size: 25px;
@@ -31,6 +57,8 @@ body {
 }
 
 .fa-bars {
+  cursor: pointer;
+  color: var(--secondary-color);
   display: none;
 }
 
@@ -61,6 +89,7 @@ body {
   width: 21rem;
   height: 8vh;
   margin-bottom: 13rem;
+  color: var(--secondary-color);
 }
 .container2 {
   display: flex;
@@ -69,7 +98,7 @@ body {
   height: 48vh;
 }
 .sub1 {
-  background-color: #f5efef;
+  background-color: var(--primary3-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,9 +107,11 @@ body {
 }
 .sub1 h1 {
   text-align: center;
+  color: var(--secondary-color);
 }
 .sub-container2 {
-  background-color: white;
+  background-color: var(--primary1-color);
+  color: var(--secondary-color);
   width: 77%;
   height: 38vh;
 }
@@ -90,14 +121,14 @@ h4 {
 }
 .sub2 {
   display: flex;
-  background-color: #f5efef;
-
+  background-color: var(--primary3-color);
   flex-direction: column;
   align-items: center;
   width: 50%;
   height: 100%;
 }
 .sub2 h1 {
+  color: var(--secondary-color);
   text-align: center;
 }
 .sub-container3 {
@@ -112,13 +143,14 @@ h4 {
 .per .left {
   font-size: large;
   font-weight: bold;
-  color: rgb(35, 32, 36);
+  color: var(--secondary-color);
 }
 
 .right {
   margin-right: 5rem;
   font-weight: bold;
-  color: rgb(252, 92, 158);
+    color: var(--secondary-color);
+
 }
 .line {
   background-color: rgb(170, 165, 165);
@@ -127,7 +159,7 @@ h4 {
   border-radius: 9px;
 }
 .line1 {
-  background-color: brown;
+  background-color: var(--secondary-color);
   height: 7px;
   width: 71%;
   border-radius: 9px;
@@ -183,18 +215,17 @@ h4 {
     position: absolute;
     width: 100%;
     top: 6rem;
-    border: 1px solid;
-    background-color: #c4c4c4;
-    color: white;
+    background-color: var(--primary2-color);
+       color: var(--secondary-color);
     border-radius: 5%;
     height: 48vh;
     flex-direction: column;
     justify-content: center;
   }
   .nav_bar1 a {
-        font-size: 21px;
+    font-size: 21px;
     font-weight: bold;
-    color: black;
+          color: var(--secondary-color);
     margin: 26px;
   }
   .container {
