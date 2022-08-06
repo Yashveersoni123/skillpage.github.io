@@ -14,15 +14,20 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+.fa-moon:hover {
+  font-size: 25px;
+  color: #7c18ff;
+}
 :root {
   --primary-color: #0d0d0d;
   --primary1-color: #0d0d0d;
   --primary2-color: #050404ba;
   --primary3-color: #3b3b3b;
   --secondary-color: white;
+  --secondary-color1: #7794ff;
 }
 .dark-theme {
-  --primary-color: #c7c7c7;
+  --primary-color: #ffffff;
   --primary1-color: #e3e3e3;
   --primary2-color: #ffffffc7;
   --primary3-color: #dbdada;
@@ -39,15 +44,29 @@ body {
   text-decoration: none;
   background-color: var(--primary-color);
 }
+.menu:hover {
+  font-size: 30px;
+  color: #7c18ff;
+}
+.menu1:hover {
+  font-size: 30px;
+  color: #7c18ff;
+}
+.menu2:hover {
+  font-size: 30px;
+  color: #7c18ff;
+}
+.menu3:hover {
+  font-size: 30px;
+  color: #7c18ff;
+}
 .nav_bar a {
   margin: 2rem;
   color: var(--secondary-color);
   font-size: 25px;
   text-decoration: none;
 }
-.nav_bar a:hover {
-  color: rgb(114, 182, 221);
-}
+
 #myportfolio {
   color: var(--secondary-color);
   cursor: pointer;
@@ -69,12 +88,13 @@ body {
   align-items: center;
   width: 100%;
   height: 42vh;
+  margin-top: 1rem;
 }
 
 .one {
-  width: 18rem;
-  height: auto;
-  border-radius: 9rem;
+    width: 16rem;
+    height: 35vh;
+    border-radius: 5rem;
   -webkit-box-shadow: 0px 18px 20px -10px rgb(127 240 255 / 3%);
   -moz-box-shadow: 0px 18px 20px -10px rgba(127, 240, 255, 0);
   box-shadow: 0px 18px 20px -10px rgb(127 240 255 / 36%);
@@ -82,7 +102,6 @@ body {
 #img {
   width: 100%;
   height: 100%;
-  border-radius: 15rem;
 }
 .two {
   text-align: center;
@@ -93,7 +112,7 @@ body {
 }
 .container2 {
   display: flex;
-
+ margin-top: -2rem;
   width: 100%;
   height: 48vh;
 }
@@ -159,7 +178,7 @@ h4 {
   border-radius: 9px;
 }
 .line1 {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color1);
   height: 7px;
   width: 71%;
   border-radius: 9px;
@@ -198,6 +217,9 @@ h4 {
     font-size: 19px;
     margin: 1rem;
     text-decoration: none;
+  }
+  .one{
+    width: 13rem;
   }
 }
 @media screen and (max-width: 600px) {
